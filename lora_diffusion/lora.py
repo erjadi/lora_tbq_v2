@@ -1166,5 +1166,5 @@ def save_all(
                     learned_embeds[:4],
                 )
                 embeds[tok] = learned_embeds.detach().cpu()
-
-        save_safeloras_with_embeds(loras, embeds, save_path)
+        print("Save_all (webui) to ", save_path)
+        save_safeloras_for_webui(loras, embeds, save_path)

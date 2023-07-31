@@ -3,7 +3,7 @@ export MODEL_NAME="stabilityai/stable-diffusion-2-1-base"
 export INSTANCE_DIR="./data_example"
 export OUTPUT_DIR="./output_example"
 
-accelerate launch train_lora_dreambooth.py \
+accelerate launch train_dreambooth_lora_sdxl.py \
   --pretrained_model_name_or_path=$MODEL_NAME  \
   --instance_data_dir=$INSTANCE_DIR \
   --output_dir=$OUTPUT_DIR \
